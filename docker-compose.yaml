@@ -13,9 +13,11 @@ services:
       - ./workspace:/workspace  # Mount the workspace folder
     environment:
       - TZ=UTC
+      - API_BASE=http://host.docker.internal:11434
+      - MODEL=ollama_chat/llama3
     extra_hosts:
-      - "host.docker.internal:host-gateway"
-    command: tail -f /dev/null  # Keep the container running for interaction
+      - "host.docker.internal:host-gateway"  # Enable communication with the Windows host
+    command: /bin/bash -c "source /root/.bashrc && tail -f /dev/null"  # Keep the container running
 
 networks:
   ubuntu_net:
