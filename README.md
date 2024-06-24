@@ -1,5 +1,5 @@
 
-# Ubuntu Open Interpreter Environment
+# Ubuntu Open Interpreter Environment in Docker
 
 This project sets up an Ubuntu environment using Docker, allowing you to test and create software on an Ubuntu system with [Open Interpreter](https://github.com/OpenInterpreter/open-interpreter). The Open Interpreter is configured to communicate with a locally compiled version of [Ollama](https://github.com/ollama/ollama/) running on your host system.
 
