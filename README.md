@@ -1,7 +1,4 @@
-Sure, let's update the `README.md` file to include the installation of Ollama as a prerequisite:
 
-### `README.md`
-```markdown
 # Ubuntu Open Interpreter Environment
 
 This project sets up an Ubuntu environment using Docker, allowing you to test and create software on an Ubuntu system with [Open Interpreter](https://github.com/OpenInterpreter/open-interpreter). The Open Interpreter is configured to communicate with a locally compiled version of [Ollama](https://github.com/ollama/ollama/) running on your host system.
@@ -68,6 +65,3 @@ Contributions are welcome! Please open an issue or submit a pull request.
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-```
-
-This update ensures that users are aware they need to have Ollama installed and running on their host system as a prerequisite before setting up and using the Docker environment.
