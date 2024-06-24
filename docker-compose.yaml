@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  ubuntu22:
+    build: .
+    container_name: ubuntu22_container
+    restart: always
+    tty: true
+    networks:
+      - ubuntu_net
+    volumes:
+      - ./data:/data
+      - ./workspace:/workspace  # Mount the workspace folder
+    environment:
+      - TZ=UTC
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    command: tail -f /dev/null  # Keep the container running for interaction
+
+networks:
+  ubuntu_net:
+    driver: bridge
